@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            let numInicial;
+            let numFinal;
+            let multi;
+            let contPar;
+            let contImpar;
+            let contar;
+            let resultado;
+
+            numInicial=1;
+            numFinal=5;
+            contPar=0;
+            contImpar=0;
+            contar=1;
+            
+        while (numInicial <= numFinal) {
+            contar = 1;
+            while (contar <= 5) {
+            resultado = numInicial * contar;
+
+            if (resultado % 2 == 0) {
+                console.log(numInicial + "x" + contar + "=" + resultado + "  Buzz");
+                contPar = contPar + 1;
+            } else {
+                console.log(numInicial + "x" + contar + "=" + resultado + "  Bazz");
+                contImpar = contImpar + 1;
+            }
+            contar++;
+            }
+            numInicial++;
+        }
+    console.log("La cantidad de pares es:" + contPar);
+    console.log("La cantidad de Impares es:" + contImpar);
+    
+    </script>
+</body>
+</html>

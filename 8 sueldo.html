@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sueldo</title>
+</head>
+<body>
+    <script>
+        let sueldo;
+        let diasTra=30;
+        let valorDia=50.000;
+        let salud;
+        let pension;
+        let arl
+        let descu;
+
+        sueldo=diasTra * valorDia;
+        salud=sueldo * 0.12;
+        pension=sueldo * 0.16;
+        arl =sueldo * 0.052;
+
+        console.log("salud " + salud);
+        console.log("pension " + pension);
+        console.log("arl " + arl);
+
+        descu=salud+pension+arl;
+        sueldo - descu;
+
+        console.log("El salario es " + sueldo);
+
+    </script>
+</body>
+</html>
